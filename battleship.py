@@ -36,6 +36,7 @@ for turn in range(4):
         print_board(board)
         print "\nCongratulations! You sunk my battleship!"
         break
+        
     else:
         if (guess_row < 0 or guess_row > 4) or (guess_col < 0 or guess_col > 4):
             print "\nOops, that's not even in the ocean."
@@ -44,7 +45,7 @@ for turn in range(4):
         else:
             print "\nYou missed my battleship!"
             board[guess_row][guess_col] = "X"
-        # Print (turn + 1) here!
+        #Number of turns left are:
         print "\nTurn",turn+1
         print
         print_board(board)
